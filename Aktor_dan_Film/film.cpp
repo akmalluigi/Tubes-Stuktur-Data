@@ -6,7 +6,7 @@ void createListFilm(listFilm &L){
 }
 adrFilm alokasiFilm(infotypeFilm dataFilm){
     adrFilm p = new elmFilm;
-    p->info = data;
+    p->info = dataFilm;
     p->next = nullptr;
     p->prev = nullptr;
     p->firstRelasi = nullptr;
@@ -71,7 +71,7 @@ void printFilm(listFilm L){
         cout << "Belum ada film yang terdaftar." << endl;
     } else {
         while (p != nullptr) {
-            cout << no++ << ". " << p->info.judul << " (" << p->info.tahun << ")" << endl;
+            cout << i++ << ". " << p->info.judul << " (" << p->info.tahun << ")" << endl;
             cout << "   Genre: " << p->info.genre << ", Rating: " << p->info.rating << endl;
             p = p->next;
         }

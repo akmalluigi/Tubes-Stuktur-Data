@@ -14,15 +14,15 @@ struct film{
 
 struct elmFilm{
     infotypeFilm info;
-    listRelasi firstRelasi;
+    adrRelasi firstRelasi;
     adrFilm next;
     adrFilm prev;
-}
+};
 
 struct listFilm{
     adrFilm firstFilm;
     adrFilm lastFilm;  
-}
+};
 
 void createListFilm(listFilm &L);
 adrFilm alokasiFilm(infotypeFilm dataFilm);
